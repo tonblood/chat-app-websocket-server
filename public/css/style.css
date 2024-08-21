@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outter-phone-ui {
+  margin: 50px;
+  border: 10px solid black;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.inner-phone-ui {
+  width: 273px;
+  height: 591px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+h3 {
+  font-family: "Playwrite AR", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
