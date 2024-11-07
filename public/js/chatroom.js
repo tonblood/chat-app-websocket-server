@@ -1,5 +1,9 @@
 (function connect() {
-  let socket = io.connect(process.env.PORT || "http://localhost:3000");
+  const SOCKET_URL =
+    window.location.hostname === "localhost"
+      ? "http://localhost:3000"
+      : `https://${window.location.hostname}`;
+  let socket = io.connect(SOCKET_URL);
 
   let username = document.querySelector("#username");
   let usernameBtn = document.querySelector("#usernameBtn");
